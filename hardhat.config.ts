@@ -46,6 +46,11 @@ const config: HardhatUserConfig = {
       url: process.env.BASE_NODE_URL || "https://mainnet.base.org",
       accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    base_Sepolia: {
+      chainId: 84532,
+      url: process.env.BASE_NODE_URL || "https://sepolia.base.org",
+      accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     arbitrum: {
       chainId: 42161,
       url: process.env.ARBITRUM_NODE_URL || "https://arb1.arbitrum.io/rpc",
