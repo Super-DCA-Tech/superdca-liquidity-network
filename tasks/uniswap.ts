@@ -5,7 +5,7 @@ import { ethers } from "ethers";
 const QuoterV2ABI = require("@uniswap/v3-periphery/artifacts/contracts/lens/QuoterV2.sol/QuoterV2.json").abi;
 const bn = require("bignumber.js");
 // Optimism
-const UNISWAP_V3_FACTORY =  "0x1F98431c8aD98523631AE4a59f267346ea31F984";
+const UNISWAP_V3_FACTORY =  "0x4752ba5DBc23f44D87826276BF6Fd6b1C372aD24"; // Base Sepolia
 const UNISWAP_QUOTER_V2 = "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6";
 const UNISWAP_NFP_MANAGER = "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
 const UNISWAP_STAKER = "0xe34139463bA50bD61336E0c446Bd8C0867c6fE65";

@@ -1,7 +1,7 @@
 import { task } from "hardhat/config";
 import { ethers } from "ethers";
 
-const SUPER_DCA_TOKEN_ADDRESS = "0xb1599CDE32181f48f89683d3C5Db5C5D2C7C93cc";
+const SUPER_DCA_TOKEN_ADDRESS = "0x1470BCf159639AA63914353F93c09E5BeF1113f0";
 
 const SuperDCAABI = [
     "function mint(uint256 amount) public",

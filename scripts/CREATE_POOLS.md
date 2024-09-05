@@ -161,3 +161,37 @@ npx hardhat mintLiquidity \
 --tickupper 887271 \
 --network tenderly
 ```
+
+
+# Base Sepolia
+
+## Pools
+| Contract | Address |
+| --- | --- |
+| USDC-DCA | 0xb30927b093F8FD3d874fcD8DB2950D769eDc858E |
+| ETH-DCA |  |
+| ETH-USDC | 0x8DD67c2B910d39CA879CF9Df9FE611D48Cc2F19F | 
+|  |  | 
+
+## USDC-DCA
+```shell
+npx hardhat createPool \
+--token0  0x1470BCf159639AA63914353F93c09E5BeF1113f0 \
+--token1  0x6B0dacea6a72E759243c99Eaed840DEe9564C194 \
+--fee 500 \
+--reserve0 1000000000000000000000 \
+--reserve1 1000000000000000000000 \
+--network base_sepolia
+```
+
+## ETH-DCA
+* ETH/USDC: 2,388
+```shell
+npx hardhat createPool \
+--token0 0x4200000000000000000000000000000000000006 \
+--token1 0x6B0dacea6a72E759243c99Eaed840DEe9564C194 \
+--fee 500 \
+--reserve0 335024088231943000 \
+--reserve1 1000000000000000000000 \
+--network base_Sepolia
+```
