@@ -181,7 +181,7 @@ npx hardhat createPool \
 --fee 500 \
 --reserve0 1000000000000000000000 \
 --reserve1 1000000000000000000000 \
---network base_Sepolia
+--network base_sepolia
 ```
 
 ## ETH-DCA

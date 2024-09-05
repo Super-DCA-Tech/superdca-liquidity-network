@@ -48,9 +48,9 @@ const config: HardhatUserConfig = {
       url: process.env.BASE_NODE_URL || "https://mainnet.base.org",
       accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-    base_Sepolia: {
+    base_sepolia: {
       chainId: 84532,
-      url: process.env.BASE_NODE_URL || "https://sepolia.base.org",
+      url: process.env.BASE_SEPOLIA_NODE_URL || "https://sepolia.base.org",
       accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     arbitrum: {
@@ -85,7 +85,7 @@ const config: HardhatUserConfig = {
       },
       customChains: [
         {
-          network: "base_Sepolia",
+          network: "base_sepolia",
           chainId: 84532,
           urls: {
             apiURL: "https://api-sepolia.basescan.org/api",
