@@ -3,6 +3,8 @@ import "@nomicfoundation/hardhat-toolbox";
 import "hardhat-gas-reporter";
 import * as tdly from "@tenderly/hardhat-tenderly";
 
+require("@nomiclabs/hardhat-etherscan");
+
 require("hardhat-deploy");
 
 require("./tasks/uniswap");
@@ -77,8 +79,21 @@ const config: HardhatUserConfig = {
     enabled: true
   },
   etherscan: {
-    apiKey: process.env.ETHERSCAN_API_KEY
-  }
+      apiKey: {
+        // ... (keep existing apiKeys if any)
+        base_Sepolia: process.env.ETHERSCAN_API_KEY || '' // Add this line
+      },
+      customChains: [
+        {
+          network: "base_Sepolia",
+          chainId: 84532,
+          urls: {
+            apiURL: "https://api-sepolia.basescan.org/api",
+            browserURL: "https://sepolia.basescan.org"
+          }
+        }
+      ]
+    }
 };
 
 export default config;
